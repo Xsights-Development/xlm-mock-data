@@ -1,0 +1,199 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-02-11T10:00:00Z",
+  "showcase_farms": ["pig-farm-x-aNGSmSd2"],
+  "showcase_locations": ["nursery-room-6-a9E6VFtE"],
+  "showcase_farm_ids": [38],
+  "avg_woa": 6,
+  "nursery_room_fixed_avgwoa": {
+    "nursery-room-5-cQEffWN0": 7,
+    "nursery-room-4-Y9wmMgSe": 5,
+    "nursery-room-3-qtuVOzEl": 6,
+    "nursery-room-2-FdFFda0i": 6,
+    "nursery-room-1-Ifwm7b2M": 5
+  },
+  "rest_mock_map": {
+    "/stats/tags": {
+      "scope": "farm",
+      "response": {
+        "data": {
+          "data": [
+            {
+              "active_tags": [
+                { "xiot-g": 19367 },
+                { "xiot-s": 1036 }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "/weather-forecast": {
+      "scope": "farm",
+      "response_fn_name": "mockWeatherForecastData"
+    },
+    "/stats/room-tags": {
+      "scope": "location",
+      "response": {
+        "data": {
+          "data": [
+            {
+              "active_tags": [
+                { "xiot-g": 1016 }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cube_mock_map": {
+    "farm-health-alerts": {
+      "scope": "farm",
+      "data": {
+        "AlertTriggered": [1225, 1090, 1335, 1155],
+        "MedicationScheduled": [210, 190, 225, 175],
+        "AddedByMobile": [140, 125, 150, 160],
+        "AddedByWeb": [90, 75, 110, 80]
+      }
+    },
+    "farm-health-alert-responses": {
+      "scope": "farm",
+      "data": {
+        "Previous3Weeks": [1425, 175, 1200, 50],
+        "Previous2Weeks": [1252, 140, 1090, 40],
+        "Previous1Week": [1375, 210, 975, 60],
+        "ThisWeek": [1155, 175, 1125, 35]
+      }
+    },
+    "farm-tags-deployed": {
+      "scope": "farm",
+      "data": {
+        "NewTagsOnboarded": [0, 0, 0, 0],
+        "ExistingActiveTags": [20538, 20498, 20438, 20403]
+      }
+    },
+    "room-health-alerts": {
+      "scope": "location",
+      "data": {
+        "AlertTriggered": [155, 135, 172, 145],
+        "MedicationScheduled": [25, 22, 28, 18],
+        "AddedByMobile": [18, 16, 15, 20],
+        "AddedByWeb": [12, 8, 7, 12]
+      }
+    },
+    "room-health-alert-responses": {
+      "scope": "location",
+      "data": {
+        "Previous3Weeks": [170, 20, 150, 6],
+        "Previous2Weeks": [133, 15, 131, 5],
+        "Previous1Week": [164, 25, 120, 7],
+        "ThisWeek": [145, 18, 140, 5]
+      }
+    },
+    "room-tags-deployed": {
+      "scope": "location",
+      "data": {
+        "NewTagsOnboarded": [0, 0, 0, 0],
+        "ExistingActiveTags": [1033, 1028, 1021, 1016]
+      }
+    },
+    "room-conditions": {
+      "scope": "location",
+      "data_fn_name": "mockTempHumData"
+    },
+    "farm-navigation-animals": {
+      "scope": "farm",
+      "data": [
+        { "be_animal.status": "normal", "be_location.identifier": "nursery-room-1-Ifwm7b2M", "be_location.name": "NURSERY ROOM 1", "be_location.type": "nursery-room", "be_animal.count": "850" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "nursery-room-1-Ifwm7b2M", "be_location.name": "NURSERY ROOM 1", "be_location.type": "nursery-room", "be_animal.count": "45" },
+        { "be_animal.status": "poor", "be_location.identifier": "nursery-room-1-Ifwm7b2M", "be_location.name": "NURSERY ROOM 1", "be_location.type": "nursery-room", "be_animal.count": "12" },
+        { "be_animal.status": "normal", "be_location.identifier": "nursery-room-2-FdFFda0i", "be_location.name": "NURSERY ROOM 2", "be_location.type": "nursery-room", "be_animal.count": "920" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "nursery-room-2-FdFFda0i", "be_location.name": "NURSERY ROOM 2", "be_location.type": "nursery-room", "be_animal.count": "38" },
+        { "be_animal.status": "poor", "be_location.identifier": "nursery-room-2-FdFFda0i", "be_location.name": "NURSERY ROOM 2", "be_location.type": "nursery-room", "be_animal.count": "8" },
+        { "be_animal.status": "normal", "be_location.identifier": "nursery-room-3-qtuVOzEl", "be_location.name": "NURSERY ROOM 3", "be_location.type": "nursery-room", "be_animal.count": "890" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "nursery-room-3-qtuVOzEl", "be_location.name": "NURSERY ROOM 3", "be_location.type": "nursery-room", "be_animal.count": "52" },
+        { "be_animal.status": "poor", "be_location.identifier": "nursery-room-3-qtuVOzEl", "be_location.name": "NURSERY ROOM 3", "be_location.type": "nursery-room", "be_animal.count": "15" },
+        { "be_animal.status": "normal", "be_location.identifier": "nursery-room-4-Y9wmMgSe", "be_location.name": "NURSERY ROOM 4", "be_location.type": "nursery-room", "be_animal.count": "875" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "nursery-room-4-Y9wmMgSe", "be_location.name": "NURSERY ROOM 4", "be_location.type": "nursery-room", "be_animal.count": "42" },
+        { "be_animal.status": "poor", "be_location.identifier": "nursery-room-4-Y9wmMgSe", "be_location.name": "NURSERY ROOM 4", "be_location.type": "nursery-room", "be_animal.count": "10" },
+        { "be_animal.status": "normal", "be_location.identifier": "nursery-room-5-cQEffWN0", "be_location.name": "NURSERY ROOM 5", "be_location.type": "nursery-room", "be_animal.count": "905" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "nursery-room-5-cQEffWN0", "be_location.name": "NURSERY ROOM 5", "be_location.type": "nursery-room", "be_animal.count": "35" },
+        { "be_animal.status": "poor", "be_location.identifier": "nursery-room-5-cQEffWN0", "be_location.name": "NURSERY ROOM 5", "be_location.type": "nursery-room", "be_animal.count": "7" },
+        { "be_animal.status": "normal", "be_location.identifier": "nursery-room-6-a9E6VFtE", "be_location.name": "NURSERY ROOM 6", "be_location.type": "nursery-room", "be_animal.count": "940" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "nursery-room-6-a9E6VFtE", "be_location.name": "NURSERY ROOM 6", "be_location.type": "nursery-room", "be_animal.count": "48" },
+        { "be_animal.status": "poor", "be_location.identifier": "nursery-room-6-a9E6VFtE", "be_location.name": "NURSERY ROOM 6", "be_location.type": "nursery-room", "be_animal.count": "12" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-1-aaTSn7B6", "be_location.name": "GROWER/FINISHER ROOM 1", "be_location.type": "grower-finisher-room", "be_animal.count": "1550" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-1-aaTSn7B6", "be_location.name": "GROWER/FINISHER ROOM 1", "be_location.type": "grower-finisher-room", "be_animal.count": "85" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-1-aaTSn7B6", "be_location.name": "GROWER/FINISHER ROOM 1", "be_location.type": "grower-finisher-room", "be_animal.count": "20" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-2-5Jn0aOr9", "be_location.name": "GROWER/FINISHER ROOM 2", "be_location.type": "grower-finisher-room", "be_animal.count": "1620" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-2-5Jn0aOr9", "be_location.name": "GROWER/FINISHER ROOM 2", "be_location.type": "grower-finisher-room", "be_animal.count": "72" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-2-5Jn0aOr9", "be_location.name": "GROWER/FINISHER ROOM 2", "be_location.type": "grower-finisher-room", "be_animal.count": "15" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-3-VTQRo8eo", "be_location.name": "GROWER/FINISHER ROOM 3", "be_location.type": "grower-finisher-room", "be_animal.count": "1585" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-3-VTQRo8eo", "be_location.name": "GROWER/FINISHER ROOM 3", "be_location.type": "grower-finisher-room", "be_animal.count": "78" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-3-VTQRo8eo", "be_location.name": "GROWER/FINISHER ROOM 3", "be_location.type": "grower-finisher-room", "be_animal.count": "18" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-4-0bxv9zqn", "be_location.name": "GROWER/FINISHER ROOM 4", "be_location.type": "grower-finisher-room", "be_animal.count": "1595" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-4-0bxv9zqn", "be_location.name": "GROWER/FINISHER ROOM 4", "be_location.type": "grower-finisher-room", "be_animal.count": "90" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-4-0bxv9zqn", "be_location.name": "GROWER/FINISHER ROOM 4", "be_location.type": "grower-finisher-room", "be_animal.count": "22" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-5-KYmtRBLZ", "be_location.name": "GROWER/FINISHER ROOM 5", "be_location.type": "grower-finisher-room", "be_animal.count": "1610" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-5-KYmtRBLZ", "be_location.name": "GROWER/FINISHER ROOM 5", "be_location.type": "grower-finisher-room", "be_animal.count": "68" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-5-KYmtRBLZ", "be_location.name": "GROWER/FINISHER ROOM 5", "be_location.type": "grower-finisher-room", "be_animal.count": "16" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-6-rPHSUGCA", "be_location.name": "GROWER/FINISHER ROOM 6", "be_location.type": "grower-finisher-room", "be_animal.count": "1570" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-6-rPHSUGCA", "be_location.name": "GROWER/FINISHER ROOM 6", "be_location.type": "grower-finisher-room", "be_animal.count": "82" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-6-rPHSUGCA", "be_location.name": "GROWER/FINISHER ROOM 6", "be_location.type": "grower-finisher-room", "be_animal.count": "19" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-7-U64p46TP", "be_location.name": "GROWER/FINISHER ROOM 7", "be_location.type": "grower-finisher-room", "be_animal.count": "1560" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-7-U64p46TP", "be_location.name": "GROWER/FINISHER ROOM 7", "be_location.type": "grower-finisher-room", "be_animal.count": "75" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-7-U64p46TP", "be_location.name": "GROWER/FINISHER ROOM 7", "be_location.type": "grower-finisher-room", "be_animal.count": "17" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-8-pXPPpJI9", "be_location.name": "GROWER/FINISHER ROOM 8", "be_location.type": "grower-finisher-room", "be_animal.count": "1605" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-8-pXPPpJI9", "be_location.name": "GROWER/FINISHER ROOM 8", "be_location.type": "grower-finisher-room", "be_animal.count": "88" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-8-pXPPpJI9", "be_location.name": "GROWER/FINISHER ROOM 8", "be_location.type": "grower-finisher-room", "be_animal.count": "21" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-9-SrcSWO9i", "be_location.name": "GROWER/FINISHER ROOM 9", "be_location.type": "grower-finisher-room", "be_animal.count": "1580" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-9-SrcSWO9i", "be_location.name": "GROWER/FINISHER ROOM 9", "be_location.type": "grower-finisher-room", "be_animal.count": "70" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-9-SrcSWO9i", "be_location.name": "GROWER/FINISHER ROOM 9", "be_location.type": "grower-finisher-room", "be_animal.count": "14" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-10-QO1gJmfV", "be_location.name": "GROWER/FINISHER ROOM 10", "be_location.type": "grower-finisher-room", "be_animal.count": "1590" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-10-QO1gJmfV", "be_location.name": "GROWER/FINISHER ROOM 10", "be_location.type": "grower-finisher-room", "be_animal.count": "80" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-10-QO1gJmfV", "be_location.name": "GROWER/FINISHER ROOM 10", "be_location.type": "grower-finisher-room", "be_animal.count": "16" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-11-j9AWL61i", "be_location.name": "GROWER/FINISHER ROOM 11", "be_location.type": "grower-finisher-room", "be_animal.count": "1575" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-11-j9AWL61i", "be_location.name": "GROWER/FINISHER ROOM 11", "be_location.type": "grower-finisher-room", "be_animal.count": "92" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-11-j9AWL61i", "be_location.name": "GROWER/FINISHER ROOM 11", "be_location.type": "grower-finisher-room", "be_animal.count": "23" },
+        { "be_animal.status": "normal", "be_location.identifier": "grower-finisher-room-12-dq4uFaFN", "be_location.name": "GROWER/FINISHER ROOM 12", "be_location.type": "grower-finisher-room", "be_animal.count": "1615" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "grower-finisher-room-12-dq4uFaFN", "be_location.name": "GROWER/FINISHER ROOM 12", "be_location.type": "grower-finisher-room", "be_animal.count": "65" },
+        { "be_animal.status": "poor", "be_location.identifier": "grower-finisher-room-12-dq4uFaFN", "be_location.name": "GROWER/FINISHER ROOM 12", "be_location.type": "grower-finisher-room", "be_animal.count": "13" },
+        { "be_animal.status": "normal", "be_location.identifier": "farrowing-barn-1-8MfYHqfJ", "be_location.name": "FARROWING BARN 1", "be_location.type": "sow-farrowing", "be_animal.count": "420" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "farrowing-barn-1-8MfYHqfJ", "be_location.name": "FARROWING BARN 1", "be_location.type": "sow-farrowing", "be_animal.count": "28" },
+        { "be_animal.status": "poor", "be_location.identifier": "farrowing-barn-1-8MfYHqfJ", "be_location.name": "FARROWING BARN 1", "be_location.type": "sow-farrowing", "be_animal.count": "8" },
+        { "be_animal.status": "normal", "be_location.identifier": "farrowing-barn-2-kfyMTxYN", "be_location.name": "FARROWING BARN 2", "be_location.type": "sow-farrowing", "be_animal.count": "395" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "farrowing-barn-2-kfyMTxYN", "be_location.name": "FARROWING BARN 2", "be_location.type": "sow-farrowing", "be_animal.count": "32" },
+        { "be_animal.status": "poor", "be_location.identifier": "farrowing-barn-2-kfyMTxYN", "be_location.name": "FARROWING BARN 2", "be_location.type": "sow-farrowing", "be_animal.count": "10" },
+        { "be_animal.status": "normal", "be_location.identifier": "farrowing-barn-3-f5Cgo0Fl", "be_location.name": "FARROWING BARN 3", "be_location.type": "sow-farrowing", "be_animal.count": "405" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "farrowing-barn-3-f5Cgo0Fl", "be_location.name": "FARROWING BARN 3", "be_location.type": "sow-farrowing", "be_animal.count": "25" },
+        { "be_animal.status": "poor", "be_location.identifier": "farrowing-barn-3-f5Cgo0Fl", "be_location.name": "FARROWING BARN 3", "be_location.type": "sow-farrowing", "be_animal.count": "6" },
+        { "be_animal.status": "normal", "be_location.identifier": "farrowing-barn-4-LUOZaDAJ", "be_location.name": "FARROWING BARN 4", "be_location.type": "sow-farrowing", "be_animal.count": "412" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "farrowing-barn-4-LUOZaDAJ", "be_location.name": "FARROWING BARN 4", "be_location.type": "sow-farrowing", "be_animal.count": "30" },
+        { "be_animal.status": "poor", "be_location.identifier": "farrowing-barn-4-LUOZaDAJ", "be_location.name": "FARROWING BARN 4", "be_location.type": "sow-farrowing", "be_animal.count": "9" },
+        { "be_animal.status": "normal", "be_location.identifier": "gilt-barn-1-VxG0EJKs", "be_location.name": "GILT BARN 1", "be_location.type": "gilt", "be_animal.count": "280" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "gilt-barn-1-VxG0EJKs", "be_location.name": "GILT BARN 1", "be_location.type": "gilt", "be_animal.count": "18" },
+        { "be_animal.status": "poor", "be_location.identifier": "gilt-barn-1-VxG0EJKs", "be_location.name": "GILT BARN 1", "be_location.type": "gilt", "be_animal.count": "5" },
+        { "be_animal.status": "normal", "be_location.identifier": "sow-dry-room-1-0tGGBpvH", "be_location.name": "SOW DRY ROOM 1", "be_location.type": "sow-dry-room", "be_animal.count": "520" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "sow-dry-room-1-0tGGBpvH", "be_location.name": "SOW DRY ROOM 1", "be_location.type": "sow-dry-room", "be_animal.count": "35" },
+        { "be_animal.status": "poor", "be_location.identifier": "sow-dry-room-1-0tGGBpvH", "be_location.name": "SOW DRY ROOM 1", "be_location.type": "sow-dry-room", "be_animal.count": "12" },
+        { "be_animal.status": "normal", "be_location.identifier": "sow-dry-room-2-MQzOvt2P", "be_location.name": "SOW DRY ROOM 2", "be_location.type": "sow-dry-room", "be_animal.count": "495" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "sow-dry-room-2-MQzOvt2P", "be_location.name": "SOW DRY ROOM 2", "be_location.type": "sow-dry-room", "be_animal.count": "42" },
+        { "be_animal.status": "poor", "be_location.identifier": "sow-dry-room-2-MQzOvt2P", "be_location.name": "SOW DRY ROOM 2", "be_location.type": "sow-dry-room", "be_animal.count": "15" },
+        { "be_animal.status": "normal", "be_location.identifier": "sow-dry-room-3-RYs1fS0F", "be_location.name": "SOW DRY ROOM 3", "be_location.type": "sow-dry-room", "be_animal.count": "510" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "sow-dry-room-3-RYs1fS0F", "be_location.name": "SOW DRY ROOM 3", "be_location.type": "sow-dry-room", "be_animal.count": "38" },
+        { "be_animal.status": "poor", "be_location.identifier": "sow-dry-room-3-RYs1fS0F", "be_location.name": "SOW DRY ROOM 3", "be_location.type": "sow-dry-room", "be_animal.count": "10" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "infirmary-shed-nM7xrG9C", "be_location.name": "INFIRMARY SHED", "be_location.type": "infirmary-shed", "be_animal.count": "15" },
+        { "be_animal.status": "poor", "be_location.identifier": "infirmary-shed-nM7xrG9C", "be_location.name": "INFIRMARY SHED", "be_location.type": "infirmary-shed", "be_animal.count": "8" },
+        { "be_animal.status": "normal", "be_location.identifier": "loading-shed-3lQ3YOYh", "be_location.name": "LOADING SHED", "be_location.type": "loading-shed", "be_animal.count": "42" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "loading-shed-3lQ3YOYh", "be_location.name": "LOADING SHED", "be_location.type": "loading-shed", "be_animal.count": "5" },
+        { "be_animal.status": "normal", "be_location.identifier": "overflow-room-1-T6zraqVz", "be_location.name": "OVERFLOW ROOM 1", "be_location.type": "overflow-room", "be_animal.count": "165" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "overflow-room-1-T6zraqVz", "be_location.name": "OVERFLOW ROOM 1", "be_location.type": "overflow-room", "be_animal.count": "12" },
+        { "be_animal.status": "poor", "be_location.identifier": "overflow-room-1-T6zraqVz", "be_location.name": "OVERFLOW ROOM 1", "be_location.type": "overflow-room", "be_animal.count": "3" },
+        { "be_animal.status": "normal", "be_location.identifier": "overflow-room-2-GDwF9qGj", "be_location.name": "OVERFLOW ROOM 2", "be_location.type": "overflow-room", "be_animal.count": "158" },
+        { "be_animal.status": "sub-optimal", "be_location.identifier": "overflow-room-2-GDwF9qGj", "be_location.name": "OVERFLOW ROOM 2", "be_location.type": "overflow-room", "be_animal.count": "10" },
+        { "be_animal.status": "poor", "be_location.identifier": "overflow-room-2-GDwF9qGj", "be_location.name": "OVERFLOW ROOM 2", "be_location.type": "overflow-room", "be_animal.count": "4" }
+      ]
+    }
+  }
+}
